@@ -23,7 +23,7 @@
     // 🧠 Example of usage:
     // buildPeter() // should return { firstName: "Peter", lastName: "Pan", age: 12 }
     function buildPeter() {
-
+      return { firstName: "Peter", lastName: "Pan", age: 12 };
     }
 
     // 👉 CHALLENGE 2
@@ -31,7 +31,11 @@
     // 🧠 Example of usage:
     // buildUser("John", "Smith", 30) // should return { firstName: "John", lastName: "Smith", age: 30 }
     function buildUser(firstName, lastName, age) {
-
+      let result = {}
+      result.firstName = firstName;
+      result.lastName = lastName;
+      result.age = age;
+      return result;
     }
 
     // 👉 CHALLENGE 3

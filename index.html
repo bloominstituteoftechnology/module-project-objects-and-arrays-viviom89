@@ -62,7 +62,12 @@
     // evenList(['a']) // should return false
     // evenList(['a', 'b']) // should return true
     function evenList(arr) {
-
+      let numOfElements = arr.length;
+      let isEven = numOfElements % 2 === 0;
+      if (isEven) {
+        return true;
+      }
+      return false;
     }
 
     // 👉 CHALLENGE 5

@@ -76,8 +76,11 @@
     // 🧠 Examples of usage:
     // firstOrLast(['a', 'b'], true) // should return 'a'
     // firstOrLast(['a', 'b'], false) // should return 'b'
-    function firstOrLast() {
-
+    function firstOrLast(array, booleon) {
+      if (booleon) {
+        return array [0];
+      }
+      return array[array.length -1];
     }
 
     // 👉 CHALLENGE 6

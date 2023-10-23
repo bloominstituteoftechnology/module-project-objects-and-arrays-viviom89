@@ -132,7 +132,13 @@
     function stripChar(string, character) {
       let splitString = string.split('');
       let result = [];
-
+      for (let idx in splitString) {
+        let characters = splitString[idx]
+        if (characters !== character) {
+          result[result.length] = characters;
+        }
+      }
+      return result.join('');
     }
 
     // 👉 CHALLENGE 9
